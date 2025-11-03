@@ -1,0 +1,157 @@
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Poppins", sans-serif;
+      background-color: #fff;
+      color: #222;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+   
+    header {
+      width: 100%;
+      padding: 15px 60px;
+      background: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 1000;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    .logo {
+      font-size: 1.6rem;
+      font-weight: 700;
+    }
+
+    .logo span {
+      color: crimson;
+    }
+
+    nav ul {
+      display: flex;
+      gap: 25px;
+      list-style: none;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+      color: crimson;
+    }
+
+    .book-btn {
+      background: crimson;
+      color: white;
+      padding: 10px 18px;
+      border-radius: 30px;
+    }
+
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 120px 60px 80px;
+      flex-wrap: wrap;
+      background: #f8f8f8;
+      flex: 1;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 2.8rem;
+      font-family: "Playfair Display", serif;
+      line-height: 1.2;
+    }
+
+    .hero-text p {
+      margin: 15px 0 25px;
+      color: #666;
+    }
+
+    .hero-buttons {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .hero-buttons .book-btn {
+      padding: 12px 25px;
+    }
+
+    .watch-btn {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .watch-btn::before {
+      content: "▶";
+      font-size: 1.1rem;
+      color: crimson;
+    }
+
+    .hero-img img {
+      max-width: 420px;
+      width: 100%;
+      border-radius: 210px;
+    }
+
+    .about {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .about h2 {
+      font-family: "Playfair Display", serif;
+      font-size: 2rem;
+    }
+
+    .about h2 span {
+      color: crimson;
+    }
+
+
+    footer {
+      background: #222;
+      color: #fff;
+      text-align: center;
+      padding: 15px 10px;
+      margin-top: auto; 
+    }
+
+    @media (max-width: 900px) {
+      .hero {
+        flex-direction: column-reverse;
+        padding: 100px 30px 60px;
+      }
+
+      .hero-img img {
+        max-width: 300px;
+        margin-bottom: 30px;
+      }
+
+      nav ul {
+        flex-wrap: wrap;
+        gap: 15px;
+      }
+    }
